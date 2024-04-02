@@ -1,0 +1,254 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+    
+}
+.blue_line{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #066fab;
+}
+.headers_components_menu{
+    position:flex;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+
+}
+ul#menu {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 600px;
+    margin-top: 0%;
+  }
+
+ul#menu li{
+    display: inline-flex;
+    margin-right: 15px;
+    justify-content: space-evenly;   
+}
+ul#menu li:last-child {
+    margin-right: 0;
+  }
+
+  ul#menu li a {
+    text-decoration: none;
+    color: #022a86; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+.headers_components_menu ul{
+    display: inline;
+   margin-top: 50px;
+   
+}
+
+.headers_components_menu ul li{
+padding: 8px 12px;
+display: inline-block;
+
+}
+.headers_components_menu ul li a{
+    color: #00598c;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.UCLA_title_container{
+    margin-top: 1.5em;
+    background-color:#03659e;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10em;
+    
+}
+
+.UCLA_title_container img{
+    margin: 0 1em 0 1em;
+    width: 80px;
+    height: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wrapper {
+    border-style: solid;
+    border-color: #bdbaba;
+    border-width: 1px 0 1px 0;
+    margin: 1em 0 1em 0;
+}
+
+
+.upper-container {
+    margin: 0 10em 0 10em;
+}
+
+.news-and-features_container {
+    width: 100%;
+}
+
+.featured-title__h2 {
+    font-size: 37px;
+    color: #333333;
+    margin: 45px 0 -16px 0;
+    text-align: left;
+}
+
+.news-and-features__link {
+    text-align: right;
+}
+
+.news-and-features__link a {
+    color: #00598c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main-news__container {
+    display: flex;
+    align-items: center;
+    margin: 2.25em 0 2.5em 0;
+}
+
+.main-news__container img {
+    width: 675px;
+    height: 450px;
+    margin-left: auto;
+}
+
+.main-news-card {
+    background: #ffffff;
+    position: absolute;
+    padding: 0 2.2em 1.75em 3em;
+}
+
+.main-news-card b {
+    color: #333333;
+    font-size: 14px;
+}
+
+.main-news-card__date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    margin: 0 0 8px;
+}
+
+.main-news-card__quote {
+    text-decoration: none;
+    color: #015180;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.main-news-card__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+    padding: 0;
+}
+
+.news-card__description {
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+    padding: 0 2em 2em 2em;
+}
+
+.news-card__source{
+    padding: 0 0 2em 2em;
+}
+
+.main-news-card__source-link {
+    color: #00598c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.news-card__date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+}
+
+
+
+
+.bottom-container {
+    background: #f2f2f2;
+    padding: 0 20em 0 20em;
+    display: flex;
+    justify-content: space-evenly;
+    height: 45em;
+}
+
+.news-card {
+    background-color: #ffffff;
+    width: 30%;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.news-card img {
+    max-width: 376px;
+    max-height: 282px;
+    width: 100%;
+}
+
+.news-card__date {
+    padding: 2em 0 0 2em;
+    margin: 0;
+}
+
+.news-card b {
+    color: #333333;
+    font-size: 16px;
+}
+
+.news-card__quote {
+    text-decoration: none;
+    color: #00598c;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.news-card__quote p {
+    padding: 0 1em 0 1.2em;
+    margin: 0.5em 0 0 0;
+}
+
+.news-card__source-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #00598c;
+}
+
+.news-card__container--bottom {
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 47em;
+}
