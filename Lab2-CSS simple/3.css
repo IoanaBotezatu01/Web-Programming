@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444d53;
+}
+
+table {
+    border-collapse: collapse;
+    width: 750px;
+    height: 700px;
+}
+
+th, td {
+    border: 1px solid #260101;
+    padding: 10px;
+    text-align: left;
+    width: 400px;
+}
+
+th {
+    background-color: #311c1c;
+}
+td:hover p{
+    display: inline-flex;
+    width: 300px;
+    height: auto;
+}
+
+.person-image {
+    position: static;
+}
+
+.person-image img {
+    width: 200px;
+    height: 170px;
+    cursor:alias;
+}
+p{
+    display: none;
+    background-color: #444d53;
+}
+
+.info-cell {
+    display: none;
+    
+}
+
+.person-image:hover .info-cell  {
+    display:block;
+    padding-left: 10px;
+    background-color: #ddd;
+    border: 1px solid #1b0101;
+}
