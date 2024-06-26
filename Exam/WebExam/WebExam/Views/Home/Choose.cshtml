@@ -1,0 +1,12 @@
+﻿
+@{
+	ViewData["Title"] = "Choose";
+}
+<div class="text-center">
+    <h1 class="display-4">Choose Action:</h1>
+    <form method="post" action="">
+        <button type="submit" formaction="@Url.Action("AddDocument", "Home")" class="btn btn-primary">Add New Record Into Documents</button>
+        <button type="submit" formaction="@Url.Action("DisplayDocsAndMovies", "Home")" class="btn btn-secondary">List All Documents And Movies </button>
+        <button type="submit" formaction="@Url.Action("Index", "Movies")" class="btn btn-secondary">Delete A Movie </button>
+    </form>
+</div>

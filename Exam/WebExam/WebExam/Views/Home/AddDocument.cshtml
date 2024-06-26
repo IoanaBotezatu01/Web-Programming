@@ -1,0 +1,25 @@
+﻿@model WebExam.Models.Documents
+
+@{
+    ViewData["Title"] = "AddDocument";
+}
+
+<h1>Add Document</h1>
+
+<h4>Documents</h4>
+<hr />
+<div class="row">
+   
+        <form method="post" action="/Home/UpdateDocAndAuthor">
+        <label for="id">Id:</label>
+        <input type="text" id="id" name="id" required />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="contents">Contents:</label>
+        <input type="text" id="contents" name="contents" required />
+        <button type="submit">Update</button>
+        </form>
+</div>
+
+
+

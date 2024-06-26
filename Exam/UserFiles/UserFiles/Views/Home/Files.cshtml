@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "User's Files";
+}
+
+<div class="text-center">
+    <h1 class="display-4">User's Files</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>Filepath</th>
+                <th>size</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.Files)
+            {
+                <tr>
+                    <td>@file.Filename</td>
+                    <td>@file.Filepath</td>
+                    <td>@file.Size</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        @if (Model.CurrentPage > 1)
+        {
+            <a class="btn btn-primary" href="@Url.Action("Files", new { pageNumber = Model.CurrentPage - 1 })">Previous</a>
+        }
+
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <a class="btn btn-primary" href="@Url.Action("Files", new { pageNumber = Model.CurrentPage + 1 })">Next</a>
+        }
+    </div>
+</div>

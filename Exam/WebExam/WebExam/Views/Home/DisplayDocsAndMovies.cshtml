@@ -1,0 +1,31 @@
+﻿
+@{
+	ViewData["Title"] = "DisplayDocsAndMovies";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Available Hotels</h1>
+    
+    <p>Author: @TempData["Name"]</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Documents</th>
+                <th>Movies</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var author in Model)
+            {
+                <tr>
+                    <td>@author.DocumentList</td>
+                    <td>@author.MovieList</td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+   
+    <a asp-action="Choose" class="btn btn-primary">Back</a>
+</div>

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+     <form method="post" action="/Home/Login">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" name="userName" required />
+        <label for="list">Document or Movie name:</label>
+        <input type="text" id="list" name="list" required />
+        <button type="submit">Login</button>
+      </form>
+</div>
