@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ProductsOrders.Models.Product>
+
+@{
+    ViewData["Title"] = "Search";
+}
+<div>
+    <form action="/Products/Filter" method="post">
+        <label for="string">Enter A String:</label>
+        <input type="text" id="string" name="string" />
+        <button type="submit">Search</button>
+    </form>
+</div>

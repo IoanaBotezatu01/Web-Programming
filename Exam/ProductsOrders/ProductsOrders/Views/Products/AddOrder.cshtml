@@ -1,0 +1,14 @@
+﻿
+@{
+	ViewData["Title"] = "AddOrder";
+}
+<h1>Add To The Order</h1>
+<div>
+	<form action="@Url.Action("GetOrder", "Orders")" method="post">
+		<label for="product">Product:</label>
+		<input type="text" id="product" name="product" required />
+		<label for="quantity">Quantity:</label>
+		<input type="text" id="quantity" name="quantity" required />
+		<button type="submit">Place Order</button>
+	</form>
+</div>

@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Choose Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Choose Type:</h1>
+    <form method="post" action="">
+        <button type="submit" formaction="@Url.Action("Index", "Products")" class="btn btn-primary">Products</button>
+        <button type="submit" formaction="@Url.Action("Index", "Orders")" class="btn btn-secondary">Orders</button>
+    </form>
+</div>

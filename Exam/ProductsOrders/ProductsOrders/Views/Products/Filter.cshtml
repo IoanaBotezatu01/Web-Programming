@@ -1,0 +1,32 @@
+﻿
+@{
+	ViewData["Title"] = "Filter";
+}
+<div class="text-center">
+    <h1 class="display-4">Found Products</h1>
+    <p>String: @TempData["String"]</p>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+        <a asp-action="Index">Back To List</a>
+    </p>
+   
+</div>
