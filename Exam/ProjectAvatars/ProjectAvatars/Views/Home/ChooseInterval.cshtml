@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Choose Interval";
+}
+
+<h1>Choose the interval</h1>
+<div>
+	<form method="post" action="@Url.Action("Avatars", "Home")">
+    <label for="begin">From:</label>
+    <input type="text" id="begin" name="begin" required />
+    <label for="end">To:</label>
+    <input type="text" id="end" name="end" required />
+        <button type="submit" class="btn btn-secondary">See Avatars</button>
+	</form>
+</div>

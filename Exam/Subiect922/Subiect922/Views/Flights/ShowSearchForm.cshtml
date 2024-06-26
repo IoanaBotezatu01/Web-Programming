@@ -1,0 +1,30 @@
+﻿@model Subiect922.Models.Flights
+
+<h4>SearchFlights</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="ShowSearchResults" method="get">
+           
+            <div class="form-group">
+                <label for="Date" class="control-label">Date</label>
+                <input for="Date" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="DestinationCity" class="control-label">Destination City</label>
+                <input for="DestinationCity" class="form-control" />
+               
+            </div>
+            
+            <div class="form-group">
+                <input name="SearchFlights" type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

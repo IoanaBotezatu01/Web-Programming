@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Subiect922.Models.Hotels>
+
+@{
+    ViewData["Title"] = "Available Hotels";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Available Hotels</h1>
+    <p>Date: @TempData["Date"]</p>
+    <p>Destination City: @TempData["DestinationCity"]</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Hotel Name</th>
+                <th>Date</th>
+                <th>City</th>
+                <th>Available Rooms</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var hotel in Model)
+            {
+                <tr>
+                    <td>@hotel.HotelName</td>
+                    <td>@hotel.Date</td>
+                    <td>@hotel.City</td>
+                    <td>@hotel.AvailableRooms</td>
+                    <td>
+                        <form method="post" asp-action="MakeReservation">
+                            <input type="hidden" name="id" value="@hotel.Id" />
+                            <input type="hidden" name="type" value="Hotel" />
+                            <button type="submit" class="btn btn-success">Make Reservation</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <form method="post" asp-action="CancelReservations">
+        <button type="submit" class="btn btn-danger">Cancel All Reservations for Date and City</button>
+    </form>
+    <a asp-action="Flights" class="btn btn-primary">View Flights</a>
+</div>
+

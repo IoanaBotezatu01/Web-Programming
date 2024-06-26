@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Subiect922.Models.Flights>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>Date</th>
+            <th>Destination City</th>
+            <th>Available Seats</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date</td>
+                <td>@item.DestinationCity</td>
+                <td>@item.AvailableSeats</td>
+            </tr>
+        }
+    </tbody>
+</table>

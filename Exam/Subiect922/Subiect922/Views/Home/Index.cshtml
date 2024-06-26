@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Begin a reservation</h1>
+    <form method="post" action="/Home/SetUser">
+        <label for="userName">Your Username:</label>
+        <input type="text" id="userName" name="userName" required />
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required />
+        <label for="destination_city">Destination:</label>
+        <input type="text" id="destination_city" name="destination_city" required />
+        <button type="submit">Begin Reservation</button>
+    </form>
+
+</div>
